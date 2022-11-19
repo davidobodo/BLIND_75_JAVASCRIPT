@@ -1,3 +1,5 @@
+/** @format */
+
 // https://leetcode.com/problems/merge-intervals/description/
 
 //-----------------------------------------------------------
@@ -10,10 +12,7 @@ function mergeIntervals(intervals) {
 
 	for (let i = 1; i < intervals.length; i++) {
 		if (currentInterval[1] >= intervals[i][0]) {
-			currentInterval = [
-				Math.min(currentInterval[0], intervals[i][0]),
-				Math.max(currentInterval[1], [intervals[i][1]]),
-			];
+			currentInterval = [Math.min(currentInterval[0], intervals[i][0]), Math.max(currentInterval[1], [intervals[i][1]])];
 		} else {
 			res.push(currentInterval);
 			currentInterval = intervals[i];
