@@ -2,6 +2,10 @@
 
 // https://leetcode.com/problems/set-matrix-zeroes/description/
 
+//-----------------------------------------------------------
+// SOLUTION
+//-----------------------------------------------------------
+
 function setZeroes(matrix) {
 	let row = new Array(matrix.length).fill(null, 0, matrix.length);
 	let column = new Array(matrix[0].length).fill(null, 0, matrix[0].length);

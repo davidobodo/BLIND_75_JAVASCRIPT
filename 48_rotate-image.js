@@ -2,6 +2,10 @@
 
 // https://leetcode.com/problems/rotate-image/description/
 
+//-----------------------------------------------------------
+// SOLUTION
+//-----------------------------------------------------------
+
 function rotate(matrix) {
 	let left = 0;
 	let right = matrix[0].length - 1;

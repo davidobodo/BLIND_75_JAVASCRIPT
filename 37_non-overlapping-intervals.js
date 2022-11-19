@@ -2,6 +2,9 @@
 
 // https://leetcode.com/problems/non-overlapping-intervals/description/
 
+//-----------------------------------------------------------
+// SOLUTION
+//-----------------------------------------------------------
 function eraseOverlapIntervals(intervals) {
 	intervals.sort((a, b) => a[0] - b[0]);
 

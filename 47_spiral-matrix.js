@@ -2,6 +2,10 @@
 
 // https://leetcode.com/problems/spiral-matrix/description/
 
+//-----------------------------------------------------------
+// SOLUTION
+//-----------------------------------------------------------
+
 function spiralOrder(matrix) {
 	let left = 0;
 	let right = matrix[0].length - 1;
