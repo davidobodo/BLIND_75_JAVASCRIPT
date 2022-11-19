@@ -1,3 +1,5 @@
+<!-- @format -->
+
 https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
 
 - 35 Insert Interval - https://leetcode.com/problems/insert-interval/description/ - MEDIUM
@@ -5,3 +7,4 @@ https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questio
 - 37 Non overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/description/ - MEDIUM
 - 46 Set Matrix Zeroes - https://leetcode.com/problems/set-matrix-zeroes/description/ - MEDIUM
 - 47 Spiral Matrix - // https://leetcode.com/problems/spiral-matrix/description/ - MEDIUM
+- 48 Rotate Image - https://leetcode.com/problems/rotate-image/description/ - MEDIUM
