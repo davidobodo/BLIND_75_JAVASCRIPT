@@ -9,4 +9,5 @@ https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questio
 - 46 Set Matrix Zeroes - https://leetcode.com/problems/set-matrix-zeroes/description/ - MEDIUM
 - 47 Spiral Matrix - // https://leetcode.com/problems/spiral-matrix/description/ - MEDIUM
 - 48 Rotate Image - https://leetcode.com/problems/rotate-image/description/ - MEDIUM
+- 49 WORD SEARCH - https://leetcode.com/problems/word-search/ - MEDIUM
 - 74 Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/submissions/847353139/ - HARD
