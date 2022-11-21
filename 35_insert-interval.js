@@ -1,5 +1,3 @@
-/** @format */
-
 // https://leetcode.com/problems/insert-interval/description/
 
 //-----------------------------------------------------------
@@ -45,26 +43,28 @@ function insertInterval(intervals, newInterval) {
  */
 
 //-----------------------------------------------------------
-// TEST CASES
+// TEST CASES (Uncomment  to see in console)
 //-----------------------------------------------------------
-console.log(
-	insertInterval(
-		[
-			[1, 3],
-			[6, 9],
-		],
-		[2, 5]
-	)
-);
-console.log(
-	insertInterval(
-		[
-			[1, 2],
-			[3, 5],
-			[6, 7],
-			[8, 10],
-			[12, 16],
-		],
-		[4, 8]
-	)
-);
+// console.log(
+// 	insertInterval(
+// 		[
+// 			[1, 3],
+// 			[6, 9],
+// 		],
+// 		[2, 5]
+// 	)
+// );
+// console.log(
+// 	insertInterval(
+// 		[
+// 			[1, 2],
+// 			[3, 5],
+// 			[6, 7],
+// 			[8, 10],
+// 			[12, 16],
+// 		],
+// 		[4, 8]
+// 	)
+// );
+
+module.exports = { insertInterval };

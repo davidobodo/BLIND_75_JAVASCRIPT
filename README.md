@@ -1,7 +1,6 @@
-<!-- @format -->
-
 https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
 
+- 30 Number Of Islands - https://leetcode.com/problems/number-of-islands/description/ - MEDIUM
 - 35 Insert Interval - https://leetcode.com/problems/insert-interval/description/ - MEDIUM
 - 36 Merge Intervals - https://leetcode.com/problems/merge-intervals/description/ - MEDIUM
 - 37 Non overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/description/ - MEDIUM

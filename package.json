@@ -1,0 +1,24 @@
+{
+	"name": "blind-75-javasccript",
+	"version": "1.0.0",
+	"description": "Javascript solutions to the famous Blind 75 Data structures and Algorithm questions",
+	"scripts": {
+		"test": "jest --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/davidobodo/BLIND_75_JAVASCRIPT.git"
+	},
+	"author": "David Obodo",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/davidobodo/BLIND_75_JAVASCRIPT/issues"
+	},
+	"homepage": "https://github.com/davidobodo/BLIND_75_JAVASCRIPT#readme",
+	"devDependencies": {
+		"jest": "^29.3.1"
+	},
+	"jest": {
+		"verbose": true
+	}
+}
