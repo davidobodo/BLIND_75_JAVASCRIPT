@@ -1,6 +1,7 @@
 https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
 
 - 02 Best time to buy and sell stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/ - EASY
+- 03 Contains Duplicates - https://leetcode.com/problems/contains-duplicate/ - EASY
 - 30 Number Of Islands - https://leetcode.com/problems/number-of-islands/description/ - MEDIUM
 - 35 Insert Interval - https://leetcode.com/problems/insert-interval/description/ - MEDIUM
 - 36 Merge Intervals - https://leetcode.com/problems/merge-intervals/description/ - MEDIUM
