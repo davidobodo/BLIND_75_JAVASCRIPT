@@ -1,3 +1,9 @@
+// https://leetcode.com/problems/3sum/description/
+
+//-----------------------------------------------------------
+// SOLUTION
+//-----------------------------------------------------------
+
 function threeSum(nums) {
 	let data = [];
 	nums.sort((a, b) => a - b);
@@ -29,3 +35,16 @@ function threeSum(nums) {
 
 	return data;
 }
+
+//-----------------------------------------------------------
+// EXPLANATION
+//-----------------------------------------------------------
+/**
+ * Sort given numbers as it makes the algorithm easier
+ * Use three pointers
+ * Adjust pointers and check if sum is equal to zero
+ * BEWARE: Since no duplicates are allowed
+ * 	- Check for duplicates in both the first and second pointer and adjust if we encounter one
+ */
+
+module.exports = { threeSum };
