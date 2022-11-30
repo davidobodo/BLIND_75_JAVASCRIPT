@@ -5,6 +5,7 @@ https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questio
 - 05 Max sub - https://leetcode.com/problems/maximum-subarray/description/ - MEDIUM
 - 06 Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/description/ - MEDIUM
 - 09 Three sum - https://leetcode.com/problems/3sum/description/ - MEDIUM
+- 10 Container with most water - https://leetcode.com/problems/container-with-most-water/description/ - MEDIUM
 - 30 Number Of Islands - https://leetcode.com/problems/number-of-islands/description/ - MEDIUM
 - 35 Insert Interval - https://leetcode.com/problems/insert-interval/description/ - MEDIUM
 - 36 Merge Intervals - https://leetcode.com/problems/merge-intervals/description/ - MEDIUM
