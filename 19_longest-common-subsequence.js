@@ -14,3 +14,12 @@ function longestCommonSubsequenceDP(text1, text2) {
 
 	return dp[text1.length][text2.length];
 }
+
+//The plain recursive solution might have some time complexity issues
+function longestCommonSubsequenceRecursive(text1, text2) {
+	let count = 0;
+
+	function recurse(str1, str2) {}
+
+	count = +recurse(text1, text2);
+}
