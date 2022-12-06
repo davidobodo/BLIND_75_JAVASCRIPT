@@ -7,10 +7,12 @@ https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questio
 - 09 Three sum - https://leetcode.com/problems/3sum/description/ - MEDIUM
 - 10 Container with most water - https://leetcode.com/problems/container-with-most-water/description/ - MEDIUM
 - 16 Climbing Stairs - https://leetcode.com/problems/climbing-stairs/description/ - EASY
+- 24 Decode ways - https://leetcode.com/problems/decode-ways/description/ - MEDIUM
 - 30 Number Of Islands - https://leetcode.com/problems/number-of-islands/description/ - MEDIUM
 - 35 Insert Interval - https://leetcode.com/problems/insert-interval/description/ - MEDIUM
 - 36 Merge Intervals - https://leetcode.com/problems/merge-intervals/description/ - MEDIUM
 - 37 Non overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/description/ - MEDIUM
+- 40 Reverse Linked list - https://leetcode.com/problems/reverse-linked-list/ - EASY
 - 41 Detect cycle in linked list - https://leetcode.com/problems/linked-list-cycle/ - EASY
 - 42 Merge 2 sorted lists - https://leetcode.com/problems/merge-two-sorted-lists/description/ - EASY
 - 46 Set Matrix Zeroes - https://leetcode.com/problems/set-matrix-zeroes/description/ - MEDIUM

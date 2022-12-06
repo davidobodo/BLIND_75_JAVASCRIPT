@@ -8,7 +8,7 @@ function ListNode(val, next) {
 	this.next = next || null;
 }
 
-function mergeLists(list1, list2) {
+function mergeTwoLists(list1, list2) {
 	let p1 = list1;
 	let p2 = list2;
 
@@ -50,6 +50,8 @@ function mergeLists(list1, list2) {
 //-----------------------------------------------------------
 // TEST CASES
 //-----------------------------------------------------------
-console.log(mergeLists([1, 2, 4], [1, 3, 4]));
-console.log(mergeLists([], []));
-console.log(mergeLists([], [0]));
+console.log(mergeTwoLists([1, 2, 4], [1, 3, 4]));
+console.log(mergeTwoLists([], []));
+console.log(mergeTwoLists([], [0]));
+
+module.exports = { mergeTwoLists };
