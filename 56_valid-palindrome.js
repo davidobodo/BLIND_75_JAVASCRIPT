@@ -1,6 +1,6 @@
 function validPalindrome(s) {
 	const isAlpha = /^[a-z0-9]+$/i;
-	const word = s.toLowerCase();
+	const phrase = s.toLowerCase();
 
 	while (lp < rp) {
 		let left = phrase[lp];
