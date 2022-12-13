@@ -14,7 +14,9 @@ https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questio
 - 37 Non overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/description/ - MEDIUM
 - 40 Reverse Linked list - https://leetcode.com/problems/reverse-linked-list/ - EASY
 - 41 Detect cycle in linked list - https://leetcode.com/problems/linked-list-cycle/ - EASY
+
 - 42 Merge 2 sorted lists - https://leetcode.com/problems/merge-two-sorted-lists/description/ - EASY
+- 45 Remove Nth Node from End of list - https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/ - MEDIUM
 - 46 Set Matrix Zeroes - https://leetcode.com/problems/set-matrix-zeroes/description/ - MEDIUM
 - 47 Spiral Matrix - // https://leetcode.com/problems/spiral-matrix/description/ - MEDIUM
 - 48 Rotate Image - https://leetcode.com/problems/rotate-image/description/ - MEDIUM

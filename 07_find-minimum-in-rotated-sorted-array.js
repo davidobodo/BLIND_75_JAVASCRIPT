@@ -12,7 +12,7 @@ function findMin(nums) {
 		if (nums[mp] > nums[lp] && nums[mp] > nums[rp]) {
 			lp = mp + 1;
 		} else {
-			rp = rp - 1;
+			rp = mp - 1;
 		}
 	}
 

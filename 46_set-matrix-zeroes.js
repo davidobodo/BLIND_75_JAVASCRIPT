@@ -1,6 +1,9 @@
-/** @format */
-
 // https://leetcode.com/problems/set-matrix-zeroes/description/
+
+//SPACE COMPLEXITY = 0(n)
+//TIME COMPLEXITY = 0(n)
+
+//TODO: There is a better space complexity, check Neetcode's video
 
 //-----------------------------------------------------------
 // SOLUTION

@@ -9,8 +9,6 @@ function twoSum(nums, target) {
 			return [i, map[compliiment]];
 		}
 	}
-
-	return false;
 }
 
 //TODO:

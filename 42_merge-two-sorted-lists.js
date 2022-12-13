@@ -1,4 +1,5 @@
-/** @format */
+//SPACE COMPLEXITY = 0(1)
+//TIME COMPLEXITY = 0(n)
 
 //-----------------------------------------------------------
 // SOLUTION

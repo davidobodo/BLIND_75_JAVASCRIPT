@@ -1,3 +1,6 @@
+//TIME COMPLEXITY = O(n)
+//SPACE COMPLEXITY = O(1)
+
 function hasCycle(head) {
 	let fast = head;
 	let slow = head;

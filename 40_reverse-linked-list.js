@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/reverse-linked-list/
 
+//TIME COMPLEXITY = O(n)
+//SPACE COMPLEXITY = O(1)
+
 // Iterative solution
 function reverseIterative(head) {
 	let curr = head;
@@ -25,8 +28,6 @@ function reverseRecursive(head) {
 		if (curr.next === null) {
 			return curr;
 		}
-
-		let curr = head;
 
 		let rest = reverseRecursive(curr.next);
 

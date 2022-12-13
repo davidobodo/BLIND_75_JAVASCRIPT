@@ -1,5 +1,14 @@
 // https://leetcode.com/problems/jump-game/description/
 
+/**
+ *
+ * SPACE COMPLEXITY = O(1)
+ * Because we make use of only one variable(i.e goal) which never changes irrespective of the number of items in our nums array
+ *
+ * TIME COMPLEXITY = O(n)
+ * Because we must loop through all the items in our nums array at least once
+ */
+
 function canJump(nums) {
 	let goal = nums.length - 1;
 
