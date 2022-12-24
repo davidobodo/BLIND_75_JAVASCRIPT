@@ -6,7 +6,7 @@ function combSum(nums, target) {
 			res.push(JSON.stringify(JSON.parse(group)));
 			return;
 		}
-		if (i > nums.length || total > target) {
+		if (i >= nums.length || total > target) {
 			return;
 		}
 		group.push(nums[i]);
@@ -20,3 +20,4 @@ function combSum(nums, target) {
 
 	return res;
 }
+cu;

@@ -8,4 +8,15 @@ function TrieNode() {
 	this.endOfWord = false;
 }
 
-module.exports = { ListNode, TrieNode };
+function Interval(start, end) {
+	this.start = start;
+	this.end = end;
+}
+
+function TreeNode(val, left, right) {
+	this.val = val || 0;
+	this.left = left || null;
+	this.right = right || null;
+}
+
+module.exports = { ListNode, TrieNode, Interval, TreeNode };

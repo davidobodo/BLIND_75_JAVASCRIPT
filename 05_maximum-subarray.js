@@ -2,15 +2,15 @@
 
 //Linear
 function maxSub(nums) {
-	let maxSum = nums[0];
-	let currSum = 0;
+	let overallMax = nums[0];
+	let maxTillIndex = 0;
 
 	for (let i = 0; i < nums.length; i++) {
-		currSum = Math.max(nums[i], currSum + nums[i]);
-		maxSum = Math.max(currSum, maxSum);
+		maxTillIndex = Math.max(nums[i], maxTillIndex + nums[i]);
+		overallMax = Math.max(maxTillIndex, overallMax);
 	}
 
-	return maxSum;
+	return overallMax;
 }
 
 module.exports = { maxSub };

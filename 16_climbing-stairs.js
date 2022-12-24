@@ -9,5 +9,17 @@ function climbingStairs(n) {
 
 	return dp[dp.length - 1];
 }
+function climbingStairsConstantMemory(n) {
+	let curr = 1;
+	let prev = 1;
 
-module.exports = { climbingStairs };
+	for (let i = 2; i <= n; i++) {
+		let temp = curr;
+		curr = curr + prev;
+		prev = temp;
+	}
+
+	return curr;
+}
+
+module.exports = { climbingStairs, climbingStairsConstantMemory };
