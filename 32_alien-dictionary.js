@@ -6,6 +6,7 @@ function alienDictionary(words) {
 	 * Post order DFS
 	 */
 
+	console.log(words, "TEH WORDS");
 	let adj = {};
 
 	for (let i = 0; i < words.length; i++) {
@@ -19,29 +20,35 @@ function alienDictionary(words) {
 
 	console.log(adj);
 	//Go through pair of words
-	for (let i = 0; i < words.length; i = i + 2) {
-		console.log(i);
+	for (let i = 0; i < words.length; i++) {
 		let word1 = words[i];
 		let word2 = words[i + 1];
-		console.log(word1, word2);
 
-		if (!word2) break;
+		// if (!word2) break;
 
-		let minLength = Math.min(word1.length, word2.length);
+		let minLength = word1.length;
 
-		//Have same prefix and word 1 length is greater than word2 length
-		if (word1.length > word2.length && word1.splice(0, minLength) === word2.splice(0, minLength)) {
-			return "";
-		}
+		if (word2) {
+			minLength = Math.min(word1.length, word2.length);
 
-		for (let j = 0; j < minLength; j++) {
-			//Different characters
-			if (word1[j] !== word2[j]) {
-				adj[word1[j]].add(word2[j]);
-				break;
+			//Have same prefix and word 1 length is greater than word2 length
+			if (word1.length > word2.length && word1.slice(0, minLength) === word2.slice(0, minLength)) {
+				return "";
+			}
+
+			console.log(word1, word2, "====TEH WORDS");
+
+			for (let j = 0; j < minLength; j++) {
+				//Different characters
+				if (word1[j] !== word2[j]) {
+					console.log(word1[j], word2[j]);
+					adj[word1[j]].add(word2[j]);
+					break;
+				}
 			}
 		}
 	}
+	console.log(adj, "TEH ADJACENT AFTER FILLING");
 
 	let visited = {}; //False = visited, True = visited and in current path
 	let res = [];
@@ -78,3 +85,4 @@ function alienDictionary(words) {
 }
 
 alienDictionary(["wrt", "wrf", "er", "ett", "rftt"]);
+//wertf
