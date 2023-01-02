@@ -86,7 +86,13 @@ function dfs(course) {
 
 	visited.add(course);
 
-	for (let key of premap[course]) {
+	// for (let key of premap[course]) {
+	// 	if (!dfs(key)) {
+	// 		return false;
+	// 	}
+	// }
+
+	for (let key of adj[course]) {
 		if (!dfs(key)) {
 			return false;
 		}
