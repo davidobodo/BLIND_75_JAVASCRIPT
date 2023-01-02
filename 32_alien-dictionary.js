@@ -6,7 +6,6 @@ function alienDictionary(words) {
 	 * Post order DFS
 	 */
 
-	console.log(words, "TEH WORDS");
 	let adj = {};
 
 	for (let i = 0; i < words.length; i++) {
@@ -18,13 +17,10 @@ function alienDictionary(words) {
 		}
 	}
 
-	console.log(adj);
-	//Go through pair of words
+	//Go through pair of words to fill adj list
 	for (let i = 0; i < words.length; i++) {
 		let word1 = words[i];
 		let word2 = words[i + 1];
-
-		// if (!word2) break;
 
 		let minLength = word1.length;
 
@@ -35,8 +31,6 @@ function alienDictionary(words) {
 			if (word1.length > word2.length && word1.slice(0, minLength) === word2.slice(0, minLength)) {
 				return "";
 			}
-
-			console.log(word1, word2, "====TEH WORDS");
 
 			for (let j = 0; j < minLength; j++) {
 				//Different characters
