@@ -4,7 +4,7 @@
 	"description": "Javascript solutions to the famous Blind 75 Data structures and Algorithm questions",
 	"scripts": {
 		"test": "jest --watch",
-		"test:one": "jest __tests__/53_valid-anagram.test.js"
+		"test:one": "jest __tests__/01_two-sum.test.js"
 	},
 	"repository": {
 		"type": "git",
