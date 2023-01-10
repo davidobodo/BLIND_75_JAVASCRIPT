@@ -1,5 +1,18 @@
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 
+/**
+ *
+ * TIME COMPLEXITY = O(n)
+ * Why?
+ * Because in the worst case scenario our why loop would run only once through our input elements
+ */
+
+/**
+ * Space complexity = 0(1)
+ * Why?
+ * Because no matter the size of the input the variables remain specific
+ */
+
 function timeToSell(prices) {
 	let lp = 0;
 	let rp = 1;
@@ -16,6 +29,8 @@ function timeToSell(prices) {
 
 	return maxP;
 }
+
+module.exports = { timeToSell };
 
 /**
  * Two pointers

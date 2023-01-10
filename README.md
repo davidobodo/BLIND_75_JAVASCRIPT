@@ -1,5 +1,6 @@
 https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
 
+- 01 Two Sum - https://leetcode.com/problems/two-sum/ - EASY
 - 02 Best time to buy and sell stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/ - EASY
 - 03 Contains Duplicates - https://leetcode.com/problems/contains-duplicate/ - EASY
 - 05 Max sub - https://leetcode.com/problems/maximum-subarray/description/ - MEDIUM
