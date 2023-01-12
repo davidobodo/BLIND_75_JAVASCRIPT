@@ -8,7 +8,7 @@ describe("01. Two Sum", () => {
 	test("Case 2", () => {
 		expect(twoSum([3, 2, 4], 6).sort()).toEqual([1, 2]);
 	});
-	test("Case 2", () => {
+	test("Case 3", () => {
 		expect(twoSum([3, 3], 6).sort()).toEqual([0, 1]);
 	});
 });

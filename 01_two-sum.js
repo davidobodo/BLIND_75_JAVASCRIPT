@@ -13,6 +13,13 @@
  * Because in the worst case scenario, our "map" used for storage would be filled with "n - 1" (i.e If our compliment is the last number) number of elements
  */
 
+/**
+ *
+ * EXPLANATION
+ * Iterate through elements, check if elements compliment is already in the hashmap
+ * If the compliment is not, then add the element into the hashmap, if not we have arrived at a solution
+ */
+
 function twoSum(nums, target) {
 	let map = {};
 
