@@ -4,7 +4,7 @@
  *
  * TIME COMPLEXITY = O(logn)
  * Why?
- * Because on each iteration, the number of elements we are analyze divides by 2
+ * Because on each iteration, the number of elements we analyze divides by 2
  */
 
 /**

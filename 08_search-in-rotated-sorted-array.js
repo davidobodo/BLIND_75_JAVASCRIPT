@@ -1,3 +1,30 @@
+// https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+/**
+ * TIME COMPLEXITY = O(logn)
+ * Why?
+ * Because on each iteration, the number of elements we analyze divides by 2
+ */
+
+/**
+ * SPACE COMPLEXITY = 0(1)
+ * Why?
+ * Because our space which is our 2 variables, would always remain constant irrespective of the amount of numbers in our input
+ */
+
+/**
+ *
+ * EXPLANATION
+ * TWO POINTERS
+ *
+ * Initialize two pointers, one at the beginning and one at the end
+ * Get a middle pointer
+ * 	check if the value at our middle pointer is equal to the value we are looking for
+ *
+ * Analyze the sorted portion
+ * 	Adjust pointers from there
+ */
+
 function searchInRotated(nums, target) {
 	let lp = 0;
 	let rp = nums.length - 1;

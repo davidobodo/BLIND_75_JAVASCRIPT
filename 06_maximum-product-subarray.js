@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/maximum-product-subarray
 
 /**
- *
  * TIME COMPLEXITY = O(n)
  * Why?
  * Because our three loops would run in O(n)
@@ -16,7 +15,6 @@
  */
 
 /**
- *
  * EXPLANATION
  *
  * Loop through the given array and keep track of both the minimum product and maximum product
