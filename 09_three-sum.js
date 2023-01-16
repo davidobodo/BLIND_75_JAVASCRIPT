@@ -1,8 +1,28 @@
-// https://leetcode.com/problems/3sum/description/
+// https://leetcode.com/problems/3sum/description
 
-//-----------------------------------------------------------
-// SOLUTION
-//-----------------------------------------------------------
+/**
+ * TIME COMPLEXITY = O(logn)
+ * Why?
+ * Because on each iteration, the number of elements we analyze divides by 2
+ */
+
+/**
+ * SPACE COMPLEXITY = 0(1)
+ * Why?
+ * Because our space which is our 2 variables, would always remain constant irrespective of the amount of numbers in our input
+ */
+
+/**
+ *
+ * EXPLANATION
+ *
+ * Sort given numbers as it makes the algorithm easier
+ * Use three pointers
+ * Adjust pointers and check if sum is equal to zero
+ * BEWARE: Since no duplicates are allowed
+ * 	- Check for duplicates in both the first and second pointer and adjust if we encounter one
+ *
+ */
 
 function threeSum(nums) {
 	let data = [];
@@ -35,16 +55,5 @@ function threeSum(nums) {
 
 	return data;
 }
-
-//-----------------------------------------------------------
-// EXPLANATION
-//-----------------------------------------------------------
-/**
- * Sort given numbers as it makes the algorithm easier
- * Use three pointers
- * Adjust pointers and check if sum is equal to zero
- * BEWARE: Since no duplicates are allowed
- * 	- Check for duplicates in both the first and second pointer and adjust if we encounter one
- */
 
 module.exports = { threeSum };
