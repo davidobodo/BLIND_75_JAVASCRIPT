@@ -22,7 +22,6 @@
  * Create a DP array with values greater than the value we want to get
  * Run a loop from 1 all the way to the amount we want to get
  * Check how many coins for each coin value are needed to make up an amount
- *
  */
 
 function coinChange(coins, amount) {
