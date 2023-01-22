@@ -1,3 +1,27 @@
+// https://leetcode.com/problems/house-robber-ii/
+
+/**
+ * TIME COMPLEXITY = O(n)
+ * Why?
+ * Because have a nested whlie loop inside a for loop,
+ */
+
+/**
+ * SPACE COMPLEXITY = 0(n)
+ * Why?
+ * Because our array would store all corresponding values from our input
+
+/**
+ *
+ * EXPLANATION
+ * DP
+ * 
+ * Simply perform house robber on two sets of array
+ * 	1. without the first element
+ * 	2. withour the last element
+ *
+ */
+
 function houseRobber2(nums) {
 	if (nums.length === 1) {
 		return nums[0];
@@ -20,3 +44,5 @@ function houseRob(nums) {
 
 	return dp[dp.length - 1];
 }
+
+module.exports = { houseRobber2 };
