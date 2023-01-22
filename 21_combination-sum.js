@@ -1,23 +1,52 @@
-function combSum(nums, target) {
+// https://leetcode.com/problems/word-break/
+
+/**
+ * TIME COMPLEXITY = O(2^n)
+ * Why?
+ * Because have a nested whlie loop inside a for loop,
+ */
+
+/**
+ * SPACE COMPLEXITY = 0(n)
+ * Why?
+ * Because in the worst case scenario, our output can have all the elements added to it
+
+/**
+ *
+ * EXPLANATION
+ * RECURSION using a DECISION TREE
+ * 
+ * Run a dfs making two decisions on each index
+ * 	1. add the element at that index
+ * 	2. do not add the element at that index
+ *
+ */
+
+function combinationSum(nums, target) {
 	let res = [];
 
-	function dfs(i, group, total) {
-		if (total === target) {
-			res.push(JSON.stringify(JSON.parse(group)));
+	function dfs(currArr, currSum, currIndex) {
+		if (currSum === target) {
+			res.push(JSON.parse(JSON.stringify(currArr)));
 			return;
 		}
-		if (i >= nums.length || total > target) {
-			return;
-		}
-		group.push(nums[i]);
-		dfs(i, group, total + nums[i]);
 
-		group.pop();
-		dfs(i + 1, group, total);
+		if (currSum > target || currIndex >= nums.length) {
+			return;
+		}
+
+		currArr.push(nums[currIndex]);
+		currSum = currSum + nums[currIndex];
+		dfs(currArr, currSum, currIndex);
+
+		const val = currArr.pop();
+		currSum = currSum - val;
+		dfs(currArr, currSum, currIndex + 1);
 	}
 
-	dfs(0, [], 0);
+	dfs([], 0, 0);
 
 	return res;
 }
-cu;
+
+module.exports = { combinationSum };
