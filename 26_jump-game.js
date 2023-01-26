@@ -1,24 +1,26 @@
 // https://leetcode.com/problems/jump-game/description/
 
 /**
- * TIME COMPLEXITY = O(n^2)
+ * TIME COMPLEXITY = O(n)
  * Why?
  * Because have a nested whlie loop inside a for loop,
  */
 
 /**
- * SPACE COMPLEXITY = 0(n)
+ * SPACE COMPLEXITY = 0(1)
  * Why?
- * Because our object would store all the corresponding the decode ways
+ * Because we would always have just one single variable irrespective of our input
 
 /**
  *
  * EXPLANATION
- * DP - 2 X 2 Matrix
+ * GREEDY ALGORITHM
  * 
- * Create an m*n matrix
- * Fill each cell in the matrix with the value 1
- * Loop through the filled matrix, adding adjacent cells together 
+ * position a pointer (i.e goal post) at the end of the given array
+ * run a loop from the end of the array till the beginning
+ * 	if the sum of the value at any index and its index is greater or equal to our current goal, then adjust the goal
+ *  
+ * When loop is complete check if our goal is at the first index
  *
  */
 
