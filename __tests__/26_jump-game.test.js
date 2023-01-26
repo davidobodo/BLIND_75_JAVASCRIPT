@@ -1,7 +1,11 @@
 const { canJump } = require("../26_jump-game");
 
 describe("26. Jump Game", () => {
-	test("Case 1", () => {});
-	test("Case 2", () => {});
-	test("Case 3", () => {});
+	test("Case 1", () => {
+		console.log("TRYING");
+		expect(canJump([2, 3, 1, 1, 4])).toBe(true);
+	});
+	test("Case 2", () => {
+		expect(canJump([3, 2, 1, 0, 4])).toBe(false);
+	});
 });

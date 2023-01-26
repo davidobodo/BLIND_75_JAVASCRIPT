@@ -1,28 +1,38 @@
 // https://leetcode.com/problems/jump-game/description/
 
 /**
+ * TIME COMPLEXITY = O(n^2)
+ * Why?
+ * Because have a nested whlie loop inside a for loop,
+ */
+
+/**
+ * SPACE COMPLEXITY = 0(n)
+ * Why?
+ * Because our object would store all the corresponding the decode ways
+
+/**
  *
- * SPACE COMPLEXITY = O(1)
- * Because we make use of only one variable(i.e goal) which never changes irrespective of the number of items in our nums array
+ * EXPLANATION
+ * DP - 2 X 2 Matrix
+ * 
+ * Create an m*n matrix
+ * Fill each cell in the matrix with the value 1
+ * Loop through the filled matrix, adding adjacent cells together 
  *
- * TIME COMPLEXITY = O(n)
- * Because we must loop through all the items in our nums array at least once
  */
 
 function canJump(nums) {
 	let goal = nums.length - 1;
 
-	for (let i = nums.length - 2; i >= 0; i++) {
-		if (i + nums[i] >= goal) {
+	for (let i = nums.length - 2; i >= 0; i--) {
+		const value = nums[i];
+		if (value + i >= goal) {
 			goal = i;
 		}
 	}
 
-	if (goal === 0) {
-		return true;
-	} else {
-		return false;
-	}
+	return goal === 0 ? true : false;
 }
 
 module.exports = { canJump };
