@@ -1,9 +1,4 @@
 function encodeDecode(words) {
-	// const encode = words.join("#45");
-	// console.log({ encode });
-	// const decode = encode.split("#45");
-	// console.log({ decode });
-
 	function encode(words) {
 		let encodedString = "";
 
@@ -16,13 +11,10 @@ function encodeDecode(words) {
 			encodedString = encodedString + word;
 		}
 
-		console.log(encodedString, "TEH ENCODED");
-
 		return encodedString;
 	}
 
 	function decode(encoded) {
-		console.log(encoded, "TO DECODE");
 		let output = [];
 		let i = 0;
 
@@ -33,19 +25,27 @@ function encodeDecode(words) {
 				j++;
 			}
 
-			let wordLength = j - i;
-			output.push(encoded.slice(i, wordLength + 1));
+			let wordLength = parseInt(encoded.slice(i, j));
+
+			let decodedWord = encoded.slice(j + 1, j + 1 + wordLength);
+
+			output.push(decodedWord);
+
 			i = j + 1 + wordLength;
 		}
-
-		console.log(output);
 
 		return output;
 	}
 
-	decode(encode(words));
+	const encodedWords = encode(words);
+
+	console.log(encodedWords, "==========THE ENCODED WORDS");
+
+	const decodedWords = decode(encodedWords);
+
+	console.log(decodedWords, "==========THE DECODED WORDS");
 }
 
 console.log(encodeDecode(["lin#45t", "code", "love", "you"]));
 
-// lint:;code:;love:;you
+module.exports = { encodeDecode };

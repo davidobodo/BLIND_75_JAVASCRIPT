@@ -46,11 +46,7 @@ function minWindow(s, t) {
 
 		j++;
 	}
-
-	console.log(minString, "TEH MIN");
 }
-
-console.log(minWindow("ADOBECODEBANC", "ABC"));
 
 function isConditionFulfilled(curr, needed) {
 	for (let key in needed) {
