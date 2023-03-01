@@ -14,6 +14,8 @@ var findWords = function (board, words) {
 
 	console.log(trie, trie.root.children, "TEH TRIE");
 
+	for (let i = 0; i < words.length; i++) {}
+
 	for (let i = 0; i < board.length; i++) {
 		for (j = 0; j < board[i].length; j++) {
 			//Get the board letter

@@ -1,3 +1,21 @@
+// https://leetcode.com/problems/pacific-atlantic-water-flow/
+
+/**
+ * TIME COMPLEXITY = O(n^2)
+ * Why?
+ * Because we have two o(n) and one o(n^2)
+ */
+
+/**
+ * SPACE COMPLEXITY = 0(n)
+ * Why?
+ * The array where we would store our results
+
+/**
+ *
+ * We analyze the columns and rows seperately
+ */
+
 function pacificAtlantic(heights) {
 	let pacific = new Set();
 	let atlantic = new Set();
@@ -56,3 +74,5 @@ function pacificAtlantic(heights) {
 		dfs(row, column - 1, visit, heights[row][column]);
 	}
 }
+
+module.exports = { pacificAtlantic };

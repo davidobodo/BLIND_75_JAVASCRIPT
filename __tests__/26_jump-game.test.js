@@ -2,7 +2,6 @@ const { canJump } = require("../26_jump-game");
 
 describe("26. Jump Game", () => {
 	test("Case 1", () => {
-		console.log("TRYING");
 		expect(canJump([2, 3, 1, 1, 4])).toBe(true);
 	});
 	test("Case 2", () => {

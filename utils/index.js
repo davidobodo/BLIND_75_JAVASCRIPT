@@ -19,4 +19,9 @@ function TreeNode(val, left, right) {
 	this.right = right || null;
 }
 
-module.exports = { ListNode, TrieNode, Interval, TreeNode };
+function GraphNode(val, neighbors) {
+	this.val = val;
+	this.neighbors = neighbors === undefined ? [] : neighbors;
+}
+
+module.exports = { ListNode, TrieNode, Interval, TreeNode, GraphNode };

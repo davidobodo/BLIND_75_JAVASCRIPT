@@ -1,21 +1,18 @@
-function Node(val) {
-	this.val = val;
-	this.neighbors = neigh;
-}
+const { GraphNode } = require("./utils");
 
-function cloneGraph() {
-	if (!node) {
-		return null;
-	}
-
+function cloneGraph(node) {
 	let oldToNew = {};
 
 	function dfs(node) {
-		if (oldToNew[node.val]) {
+		if (!node) {
+			return null;
+		}
+
+		if (oldToNew[node.val] !== undefined) {
 			return oldToNew[node.val];
 		}
 
-		const clone = new Node(node.val);
+		const clone = new GraphNode(node.val);
 		oldToNew[node.val] = clone;
 
 		for (let i = 0; i < node.neighbors.length; i++) {
@@ -27,3 +24,5 @@ function cloneGraph() {
 
 	return dfs(node);
 }
+
+module.exports = { cloneGraph };
