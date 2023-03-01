@@ -28,21 +28,19 @@ function alienDictionary(words) {
 			minLength = Math.min(word1.length, word2.length);
 
 			//Have same prefix and word 1 length is greater than word2 length
-			if (word1.length > word2.length && word1.slice(0, minLength) === word2.slice(0, minLength)) {
+			if (word1.slice(0, minLength) === word2.slice(0, minLength) && word1.length > word2.length) {
 				return "";
 			}
 
 			for (let j = 0; j < minLength; j++) {
 				//Different characters
 				if (word1[j] !== word2[j]) {
-					console.log(word1[j], word2[j]);
 					adj[word1[j]].add(word2[j]);
 					break;
 				}
 			}
 		}
 	}
-	console.log(adj, "TEH ADJACENT AFTER FILLING");
 
 	let visited = {}; //False = visited, True = visited and in current path
 	let res = [];
@@ -72,11 +70,10 @@ function alienDictionary(words) {
 		}
 	}
 
-	console.log(res, "TEH RESPONSE");
 	const output = res.reverse().join("");
-	console.log(output, "TEH OUTPUT");
 	return output;
 }
 
-alienDictionary(["wrt", "wrf", "er", "ett", "rftt"]);
 //wertf
+
+module.exports = { alienDictionary };
