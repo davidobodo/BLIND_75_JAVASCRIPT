@@ -11,3 +11,5 @@ function mergeLists(lists) {
 
 	return lists[0];
 }
+
+module.exports = { mergeLists };
