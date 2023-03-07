@@ -4,6 +4,4 @@ function maxDepthRecursiveDFS(node) {
 	return 1 + Math.max(maxDepth(node.left), maxDepth(node.right));
 }
 
-function maxDepthIterativeBFS(node) {}
-
 module.exports = { maxDepthRecursiveDFS };

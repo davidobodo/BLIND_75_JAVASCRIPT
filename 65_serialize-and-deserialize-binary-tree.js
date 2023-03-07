@@ -34,3 +34,5 @@ function deserialize(data) {
 
 	return dfs();
 }
+
+module.exports = { serialize, deserialize };

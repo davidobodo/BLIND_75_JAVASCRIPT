@@ -99,5 +99,4 @@ class TrieClass {
 //-----------------------------------------------------------
 // EXPLANATION/CONCEPT
 //-----------------------------------------------------------
-//TODO:
 module.exports = { TrieClass, TriePrototype };
