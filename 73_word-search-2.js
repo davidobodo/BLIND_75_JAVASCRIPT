@@ -42,14 +42,12 @@ var findWords = function (board, words) {
 	function dfs(board, i, j, previousLetters, found, visited) {
 		console.log(visited, "TEH VISITED");
 		if (i < 0 || i >= board.length || j < 0 || j >= board[i].length) {
-			console.log("THIS FALSE 1");
 			return false;
 		}
 
 		// console.log(previousLetters, 'BEFORE', i, j)
 
 		if (visited.has(`${i}-${j}`)) {
-			console.log("THIS FALSE 2");
 			return false;
 		} else {
 			previousLetters = previousLetters + board[i][j];
@@ -57,12 +55,10 @@ var findWords = function (board, words) {
 		// console.log(previousLetters, 'AFTER')
 
 		if (!previousLetters) {
-			console.log("THIS FALSE 3");
 			return false;
 		}
 
 		if (!trie.startsWith(previousLetters)) {
-			console.log("THIS FALSE 4", previousLetters);
 			return false;
 		}
 
